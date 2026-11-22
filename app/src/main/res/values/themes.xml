@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_red">#D32F2F</color>
+    <color name="brand_red_dark">#9A0007</color>
+    <color name="icon_background">#D32F2F</color>
+    <color name="icon_foreground">#FFFFFF</color>
+
+    <style name="Theme.VideoAudioConverter" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/brand_red</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorPrimaryContainer">#FFDAD6</item>
+        <item name="colorOnPrimaryContainer">#410002</item>
+        <item name="colorSecondary">@color/brand_red_dark</item>
+    </style>
+</resources>

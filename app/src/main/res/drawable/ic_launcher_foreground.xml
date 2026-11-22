@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Play-driehoek -->
+    <path
+        android:fillColor="@color/icon_foreground"
+        android:pathData="M44,32 L44,56 L66,44 Z" />
+    <!-- Download-balk -->
+    <path
+        android:fillColor="@color/icon_foreground"
+        android:pathData="M38,68 L70,68 A2.5,2.5 0 0 1 70,73 L38,73 A2.5,2.5 0 0 1 38,68 Z" />
+</vector>

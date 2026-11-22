@@ -1,0 +1,17 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+dist/
+
+# Signing: NOOIT committen
+keystore/
+keystore.properties
+*.jks
+*.keystore
+
+# Eenmalige/test-bestanden
+eerste-keer-publiceren.bat
+test-build.bat
+test-build-log.txt

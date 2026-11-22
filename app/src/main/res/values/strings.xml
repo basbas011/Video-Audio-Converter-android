@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Video/Audio Converter</string>
+
+    <string name="hint_url">Plak hier de link (YouTube of andere site)</string>
+    <string name="paste">Plakken</string>
+    <string name="format_mp4">MP4 (video)</string>
+    <string name="format_mp3">MP3 (audio)</string>
+    <string name="hint_quality">Kwaliteit</string>
+    <string name="download">Downloaden</string>
+    <string name="cancel">Annuleren</string>
+    <string name="update_ytdlp">Downloader bijwerken</string>
+    <string name="save_location">Bestanden worden opgeslagen in: Download/Video Audio Converter</string>
+
+    <string name="status_initializing">Bezig met opstarten… (eerste keer kan even duren)</string>
+    <string name="status_ready">Klaar om te downloaden</string>
+    <string name="status_starting">Download wordt gestart…</string>
+    <string name="status_downloading">Downloaden: %1$d%% (nog %2$s)</string>
+    <string name="status_processing">Bezig met verwerken/converteren…</string>
+    <string name="status_saving">Opslaan in Downloads…</string>
+    <string name="status_done">Klaar! Opgeslagen: %1$s</string>
+    <string name="status_cancelled">Download geannuleerd</string>
+    <string name="status_error">Fout: %1$s</string>
+    <string name="status_init_error">Opstarten mislukt: %1$s</string>
+    <string name="status_updating">Downloader wordt bijgewerkt…</string>
+    <string name="status_updated">Downloader bijgewerkt naar %1$s</string>
+    <string name="status_up_to_date">Downloader is al up-to-date (%1$s)</string>
+    <string name="ytdlp_version">yt-dlp versie: %1$s</string>
+
+    <string name="error_no_url">Vul eerst een geldige link in</string>
+    <string name="error_not_ready">Even geduld, de app is nog aan het opstarten</string>
+    <string name="error_permission">Zonder opslagtoestemming kan het bestand niet worden opgeslagen</string>
+    <string name="error_clipboard_empty">Klembord is leeg</string>
+    <string name="error_no_file">Er is geen bestand gedownload</string>
+
+    <!-- App-updates via GitHub Releases -->
+    <string name="app_version">Video/Audio Converter %1$s</string>
+    <string name="app_update_check">Zoek naar app-updates</string>
+    <string name="app_update_checking">Zoeken naar app-updates…</string>
+    <string name="app_update_available">Nieuwe versie %1$s beschikbaar</string>
+    <string name="app_update_button">Update naar %1$s</string>
+    <string name="app_update_latest">Je hebt de nieuwste versie.</string>
+    <string name="app_update_check_failed">Updates controleren mislukt: %1$s</string>
+    <string name="app_update_downloading">Update downloaden… %1$d%%</string>
+    <string name="app_update_install_started">Installatie gestart.</string>
+    <string name="app_update_allow_unknown">Sta eerst \'Installeren van onbekende apps\' toe voor deze app en tik daarna opnieuw op Update.</string>
+    <string name="app_update_download_failed">Downloaden mislukt: %1$s</string>
+</resources>
