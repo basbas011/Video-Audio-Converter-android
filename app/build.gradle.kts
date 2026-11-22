@@ -31,6 +31,22 @@ fun signingValue(propName: String, envName: String): String? =
 
 val releaseStoreFile = signingValue("storeFile", "KEYSTORE_FILE")
 
+// Alias van de sleutel: uit keystore.properties / KEY_ALIAS, anders automatisch
+// de eerste sleutel in de keystore (zo werkt elke keystore, ongeacht de aliasnaam).
+fun detectKeyAlias(): String? {
+    signingValue("keyAlias", "KEY_ALIAS")?.let { return it }
+    val path = releaseStoreFile ?: return null
+    val password = signingValue("storePassword", "KEYSTORE_PASSWORD") ?: return null
+    return try {
+        val ks = java.security.KeyStore.getInstance(java.security.KeyStore.getDefaultType())
+        rootProject.file(path).inputStream().use { ks.load(it, password.toCharArray()) }
+        ks.aliases().toList().firstOrNull { ks.isKeyEntry(it) }
+    } catch (e: Exception) {
+        logger.warn("Kon alias niet uit keystore lezen: ${e.message}")
+        null
+    }
+}
+
 android {
     namespace = "nl.basverbeek.videoaudioconverter"
     compileSdk = 35
@@ -54,7 +70,7 @@ android {
             if (releaseStoreFile != null) {
                 storeFile = rootProject.file(releaseStoreFile)
                 storePassword = signingValue("storePassword", "KEYSTORE_PASSWORD")
-                keyAlias = signingValue("keyAlias", "KEY_ALIAS") ?: "app"
+                keyAlias = detectKeyAlias() ?: "app"
                 keyPassword = signingValue("keyPassword", "KEYSTORE_PASSWORD")
             }
         }
